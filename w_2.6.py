@@ -16,7 +16,7 @@ if n > 0:
         price = input("Введите цену товара >>> ")
         quantity = input("Введите количество товара >>> ")
         ed = input("В чем измеряется количестов (шт., единиц и т.п) >>> ")
-        k = (i, {"название": name, "цена": price, "количество": quantity, "ед.": ed})
+        k = (i+1, {"название": name, "цена": price, "количество": quantity, "ед.": ed})
         products.append(k)
         name_1.append(name)
         price_1.append(price)
