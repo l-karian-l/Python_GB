@@ -11,3 +11,4 @@ for i in range(0, len(list1), 2):
         print(num1, num2, end=' ')
     else:
         print(num1)
+        
