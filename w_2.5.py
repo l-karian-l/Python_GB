@@ -24,3 +24,4 @@ while code_wd == 0:
 
     print("To continue, enter - 0. To exit - any other character")
     code_wd = int(input())
+    
