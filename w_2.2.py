@@ -1,4 +1,5 @@
 # 2.2
+
 list1 = input("Введите элемент списка >>>").split()
 
 for i in range(0, len(list1), 2):
