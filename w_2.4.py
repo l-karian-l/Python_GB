@@ -1,4 +1,5 @@
 # 2.4
+
 words = input("Enter the text >>> ").split()
 
 for i in words:
@@ -9,3 +10,4 @@ for i in words:
         continue
     else:
         print(i)
+        
