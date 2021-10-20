@@ -1,0 +1,11 @@
+# 3.1
+
+def fun_1(n_1, n_2):
+    while n_2 == 0:
+        print("Мы не можем делить на 0!")
+        n_2 = int(input("Делитель = "))
+    else:
+        return f"Частное = {n_1 / n_2}"
+
+
+fun_1(int(input("Делимое = ")), int(input("Делитель = ")))
