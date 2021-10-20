@@ -1,0 +1,20 @@
+# 3.4
+
+def func(x, y):
+    if y >= 0 or x <= 0:
+        print("y has to be below 0 and x has to be above 0")
+        return "Try again :)"
+    opt = int(input("Which option do you choose? (Enter 1 or 2) -> "))
+    if opt == 1:
+        return x**y
+    elif opt == 2:
+        res = 1
+        for i in range(0, abs(y)):
+            res = res/x
+        return res
+    else:
+        print("ENTER 1 OR 2!!!")
+        return "Try again :)"
+
+
+print(func(int(input("Enter x = ")), int(input("Enter y = "))))
