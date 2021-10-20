@@ -1,0 +1,19 @@
+# 3.2
+
+
+def user(x, name, surname, birth_year, city, email, phone_num):
+    print(f"{x + 1}, {name}, {surname}, {birth_year}, "
+          f"{city}, {email}, {phone_num}")
+
+
+num = int(input("Какое количество человек вы будуте вводить? >>> "))
+for i in range(num):
+    user(
+        x=i,
+        name=input("Введите имя >>> "),
+        surname=input("Введите фамилию >>> "),
+        birth_year=input("Введите год рождения >>> "),
+        city=input("Введите город проживания >>> "),
+        email=input("Введите email >>> "),
+        phone_num=input("Введите номер телефона >>> ")
+    )
