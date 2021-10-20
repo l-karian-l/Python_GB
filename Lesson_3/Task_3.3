@@ -1,0 +1,23 @@
+# 3.3
+
+def my_func(num_1, num_2, num_3):
+    if num_1 == num_2 and num_2 == num_3:
+        return num_1 + num_2
+    sum_n = 0
+    array = [num_1, num_2, num_3]
+    min_arg = min(array[0], array[1], array[2])
+    for el in array:
+        if el > min_arg:
+            sum_n += el
+    return sum_n
+
+# print(f'Сумма двух наибольших аргументов равна: {arg1 + arg2 + arg3 - min([arg1, arg2, arg3])}')
+
+# a, b, c = map(int,input('Введите 3 числа: ').split(' '))
+# def my_func(a, b, c):
+#     lst = [a, b, c]
+#     lst.remove(min(lst))
+#     return lst[0] + lst[1]
+# print(my_func(a, b, c))
+
+print(my_func(int(input("1 число = ")), int(input("2 число = ")), int(input("3 число = "))))
