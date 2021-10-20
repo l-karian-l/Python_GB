@@ -1,0 +1,26 @@
+# 2.2
+
+list1 = input("Введите элемент списка >>>").split()
+
+# 1 способ | 1st method
+for i in range(0, len(list1), 2):
+    k = num1 = list1[i]
+
+    if i + 1 < len(list1):
+        num2 = list1[i + 1]
+        num1 = num2
+        num2 = k
+        print(num1, num2, end=' ')
+    else:
+        print(num1)
+
+# 2 способ | 2nd method
+# обмен предыдущего элемента с текущим
+# for i in range(1, len(list1), 2):
+#     list1[i], list1[i] = list1[i+1], list1[i-1]
+
+# обмен предыдущего элемента с текущим
+for i in range(0, len(list1)-1, 2):
+    list1[i], list1[i+1] = list1[i+1], list1[i]
+
+print(f"Массив с измененными занениями: {list1}")
