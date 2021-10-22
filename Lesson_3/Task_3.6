@@ -1,0 +1,18 @@
+# 3.6
+
+def int_func(word_):
+    if word_ is word_.lower():
+        return print("Your word has to consist of small letters!")
+    else:
+        return word_.capitalize()
+
+
+def func(str_):
+    new_str = ""
+    words_list = str_.split()
+    for word in words_list:
+        new_str += int_func(word) + " "
+    return print(new_str)
+
+
+func(input("Enter your string: "))
