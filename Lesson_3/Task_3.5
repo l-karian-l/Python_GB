@@ -1,0 +1,16 @@
+# 3.5
+
+def my_func(sum_1, special_char, str_):
+    if special_char == " ":
+        return print("Whitespace can't be a special symbol. Sry :(")
+    for el in str_.split():
+        if el == special_char:
+            return sum_1
+        else:
+            sum_1 += int(el)
+    print(sum_1)
+    my_func(sum_1, special_char, input())
+
+
+my_func(0, input("Enter special symbol: "),
+        input("Enter string of integers split by whitespaces: "))
